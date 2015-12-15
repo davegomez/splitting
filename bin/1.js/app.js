@@ -8,8 +8,10 @@ webpackJsonp([1],[
 /***/ function(module, exports, __webpack_require__) {
 
 	var map = {
-		"./hello": 3,
-		"./hello.js": 3
+		"./first/hello": 5,
+		"./first/hello.js": 5,
+		"./second/testing": 6,
+		"./second/testing.js": 6
 	};
 	function webpackContext(req) {
 		return __webpack_require__(webpackContextResolve(req));
@@ -26,10 +28,12 @@ webpackJsonp([1],[
 
 
 /***/ },
-/* 3 */
-/*!*************************!*\
-  !*** ./src/js/hello.js ***!
-  \*************************/
+/* 3 */,
+/* 4 */,
+/* 5 */
+/*!*******************************!*\
+  !*** ./src/js/first/hello.js ***!
+  \*******************************/
 /***/ function(module, exports) {
 
 	"use strict";
@@ -40,6 +44,35 @@ webpackJsonp([1],[
 	
 	exports.default = function (name) {
 	  return console.log("Hello " + name);
+	};
+
+/***/ },
+/* 6 */
+/*!**********************************!*\
+  !*** ./src/js/second/testing.js ***!
+  \**********************************/
+/***/ function(module, exports) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	var add = exports.add = function add(x, y) {
+	  return x + y;
+	};
+	
+	var multiply = exports.multiply = function multiply(x, y) {
+	  return x * y;
+	};
+	
+	var square = exports.square = function square(x) {
+	  return x * x;
+	};
+	
+	var dave = exports.dave = {
+	  name: 'Dave',
+	  lasName: 'Gómez'
 	};
 
 /***/ }

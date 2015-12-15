@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./src/js/hello.js"],"names":[],"mappings":";;;;;;;;;;;;;;mBAAe,cAAI;UAAI,OAAO,CAAC,GAAG,YAAU,IAAI,CAAG;EAAA,C","file":"2.js/app.js","sourcesContent":["export default name => console.log(`Hello ${name}`);\n\n\n\n/** WEBPACK FOOTER **\n ** ./src/js/hello.js\n **/"],"sourceRoot":""}

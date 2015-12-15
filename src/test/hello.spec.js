@@ -1,5 +1,5 @@
 import {test} from "blue-tape";
-import {greetings} from "../js/hello";
+import {greetings} from "../js/first/hello";
 
 test("Greetings the developer", t => {
   t.plan(3);
