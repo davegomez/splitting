@@ -1,22 +1,18 @@
 import "../scss/main.scss";
+import updateColor from './updateColor';
 
-console.log('Wellcome to the TEST!');
+const paintButton = document.getElementById('paint-button');
+const colorInput = document.getElementById('color-input');
 
-const btn1 = document.getElementById('btn1');
-const btn2 = document.getElementById('btn2');
-
-const hello = event =>
+paintButton.addEventListener('click', event => {
   require.ensure([], require => {
-    const module = require('./modules/first/hello.js');
-    module.default('Dave');
-  }, 'hello');
+    const startAnimation = require('./startAnimation');
+    const color = paintButton.querySelector('.paint-color').textContent;
+    startAnimation.default(color);
+  });
+});
 
-const testing = event =>
-  require.ensure([], require => {
-    const { dave, add } =  require('./modules/second/testing.js');
-    console.log(dave);
-    console.log(add(2, 4));
-  }, 'testing');
-
-btn1.addEventListener('click', hello);
-btn2.addEventListener('click', testing);
+colorInput.addEventListener('change', event => {
+  event.preventDefault();
+  updateColor(paintButton.querySelector('.paint-color'), colorInput.value);
+});

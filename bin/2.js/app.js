@@ -1,31 +1,22 @@
 webpackJsonp([2],{
 
-/***/ 3:
-/*!******************************************!*\
-  !*** ./src/js/modules/second/testing.js ***!
-  \******************************************/
+/***/ 4:
+/*!***********************************!*\
+  !*** ./src/js/modules/actions.js ***!
+  \***********************************/
 /***/ function(module, exports) {
 
-	'use strict';
+	"use strict";
 	
 	Object.defineProperty(exports, "__esModule", {
-	  value: true
+	    value: true
 	});
-	var add = exports.add = function add(x, y) {
-	  return x + y;
+	var animate = exports.animate = function animate(node, className) {
+	    return node.className === className ? node.classList.remove(className) : node.classList.add(className);
 	};
 	
-	var multiply = exports.multiply = function multiply(x, y) {
-	  return x * y;
-	};
-	
-	var square = exports.square = function square(x) {
-	  return x * x;
-	};
-	
-	var dave = exports.dave = {
-	  name: 'Dave',
-	  lasName: 'Gómez'
+	var paint = exports.paint = function paint(node, color) {
+	    return node.style.backgroundColor = color;
 	};
 
 /***/ }

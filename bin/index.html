@@ -7,13 +7,35 @@
 </head>
 <body>
 
-<div class="container">
-    <h1 class="fabric">Welcome to fabric</h1>
-    <p>Let's code!</p>
-
-    <button id="btn1" class="btn-class">Click Me</button>
-    <button id="btn2" class="btn-class">Second Click Me</button>
-</div>
+<main class="background">
+    <div class="left">
+        <button id="paint-button">Paint it <span class="paint-color">black</span>!</button>
+    </div>
+    <div class="right">
+        <input id="color-input" placeholder="Insert a new color!" type="text">
+        <div class="frame">
+            <div class="canvas">
+                <svg class="moon" width="87px" height="87px" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                    <g id="moon" transform="translate(-692.000000, -415.000000)" fill="#F6F6F6">
+                        <circle cx="735.5" cy="458.5" r="43.5"></circle>
+                    </g>
+                </svg>
+                <svg class="sun" width="87px" height="87px" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                    <g id="sun" transform="translate(-692.000000, -415.000000)" fill="#E5AA1F">
+                        <circle cx="735.5" cy="458.5" r="43.5"></circle>
+                    </g>
+                </svg>
+                <svg class="mountain" width="338px" height="194px" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                    <g id="mountain" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g transform="translate(-518.000000, -370.000000)" fill="#3F5A1F">
+                            <path d="M518,461.759883 C518,461.759883 589.120087,310.690704 657,396.226969 C724.879913,481.763234 750.588898,492.730492 779,448.269938 C807.411102,403.809384 856,443.523743 856,443.523743 L856,563.187912 L518,563.187912 L518,461.759883 Z" id="mountain"></path>
+                        </g>
+                    </g>
+                </svg>
+            </div>
+        </div>
+    </div>
+</main>
 
 <script src="js/app.js"></script>
 </body>
